@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Product</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form div {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Edit Product</h1>
+  <form id="editForm">
+    <div>
+      <label for="id">Product ID:</label>
+      <input type="number" id="id" placeholder="Enter Product ID" required>
+    </div>
+
+    <div>
+      <label for="nama">Product Name:</label>
+      <input type="text" id="nama" placeholder="Enter Product Name">
+    </div>
+
+    <div>
+      <label for="harga">Harga:</label>
+      <input type="number" id="harga" placeholder="Enter Product Price">
+    </div>
+
+    <div>
+      <label for="description">Description:</label>
+      <input type="text" id="description" placeholder="Enter Product Description">
+    </div>
+
+    <div>
+      <label for="gambar">Gambar:</label>
+      <input type="file" id="gambar">
+    </div>
+    
+    <button type="submit">Edit Product</button>
+  </form>
+
+  <script src="edit.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        form div {
+            margin-bottom: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="file"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add Products</h1>
+    <form>
+        <div>
+            <label for="nama">Nama</label>
+            <input autofocus id="nama" placeholder="Title" type="text" required>
+        </div>
+        <div>
+            <label for="harga">Harga</label>
+            <input id="harga" placeholder="Price" type="text" required>
+        </div>
+        <div>
+            <label for="description">Description</label>
+            <input id="description" placeholder="Description" type="text" required>
+        </div>
+        <div>
+            <label for="gambar">Gambar</label>
+            <input id="gambar" type="file" required>
+        </div>
+        <input type="submit" value="Tambah Produk">
+    </form>
+    <script src="menambahkan.js"></script>
+</body>
+</html>
